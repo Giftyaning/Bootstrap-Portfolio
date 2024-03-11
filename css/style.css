@@ -10,3 +10,39 @@ section{
     padding: 10em 5em;
     overflow-x: scroll;
 }
+
+.hero h1{
+   margin-bottom: 2em;
+}
+
+.work h1 {
+    margin-bottom: 2em;
+}
+
+.work p {
+    margin-bottom: 2em;
+}
+
+.skills h1 {
+    margin-bottom: 2em;
+}
+
+.skills p {
+    margin-bottom: 2em;
+}
+
+.project-list{
+    display: flex;
+    gap: 1.5em;
+}
+
+
+
+
+
+@media (max-width: 768px) { 
+    .project-list {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
