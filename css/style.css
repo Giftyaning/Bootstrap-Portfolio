@@ -36,9 +36,90 @@ section{
     gap: 1.5em;
 }
 
+/* Skills */
+.skill-items {
+    width: 100%;
+    max-width: 600px;
+}
+    
+.skill-items ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+    
+.skill {
+    position: relative;
+    text-align: center;
+    padding: 1.5em;
+    margin: 1em;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+    
+.skill::before,
+.skill::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+    
+.skill::before {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#6f290c, #2965f1);
+    animation: rotate 5s linear infinite;
+}
+    
+.skill::after {
+    inset: 3.5px;
+    background-color: #1E1E1E;
+    width: calc(100% - 7px);
+    height: calc(100% - 7px);
+}
+    
+.skill:hover {
+    transform: scale(1.05);
+}
+    
+.skill i {
+    font-size: clamp(3rem, 5vw, 5rem);
+    z-index: 1;
+}
 
+/* Skill Rotate color */
+#css::before {
+    background: linear-gradient(#0a1e63, #38b1d7);
+}
 
+#javascript::before {
+    background: linear-gradient(#5d4a02, #fed942);
+}
 
+#react::before {
+    background: linear-gradient(#06cee4, #a2a0a0);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+
+}
 
 @media (max-width: 768px) { 
     .project-list {
