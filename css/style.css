@@ -95,6 +95,7 @@ section{
 .skill i {
     font-size: clamp(3rem, 5vw, 5rem);
     z-index: 1;
+    color: #fff;
 }
 
 /* Skill Rotate color */
