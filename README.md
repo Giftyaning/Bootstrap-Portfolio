@@ -1,6 +1,8 @@
 # Bootstrap-Portfolio
 
-Gifty Aning's Portfolio
+Gifty Aning
+
+Live Site: https://giftyaning.github.io/Bootstrap-Portfolio/
 
 Welcome to my portfolio website! I'm Gifty Aning, a passionate self-taught developer dedicated to leveraging technology for positive impact and providing exceptional customer service. This portfolio showcases my projects, skills, and provides a means for you to get in touch with me.
 
