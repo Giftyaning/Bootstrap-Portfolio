@@ -32,7 +32,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#hero">Home</a>
               </li>
@@ -65,15 +65,44 @@
         </div>
       </section>
 
+        <!-- Skills Section -->
+      <section class="skills" id="skills">
+          <div class="top">
+            <h1 class="title">Skills</h1>
+            <p class="section-brief">Welcome to my skills section, where 
+              I highlight the diverse set of skills I've 
+              developed throughout my journey.</p>
+          </div>
+
+          <div class="skill-items">
+              <ul>
+                  <li class="skill" id="html">
+                      <i class='bx bxl-html5'></i> 
+                  </li>
+                  <li class="skill" id="css">
+                      <i class='bx bxl-css3'></i> 
+                  </li>
+                  <li class="skill" id="javascript">
+                      <i class='bx bxl-javascript'></i> 
+                  </li>
+                  <li class="skill" id="react">
+                      <i class='bx bxl-react'></i> 
+                  </li>
+              </ul>
+          </div>
+      </section>
+
+      <!-- Projects -->
       <section class="work" id="work">
-        <div class="album py-5 bg-body-tertiary">
+        <div class="album py-5">
           <div class="container">
             <div class="top">
-              <h1>Projects</h1>
-              <p>
+              <h1 class="title">Projects</h1>
+              <p class="section-brief">
                 Welcome to my projects page, where I 
                 showcase some of my recent works and creations. 
-                Explore these projects to get a glimpse of my capabilities and the diverse range of solutions 
+                Explore these projects to get a glimpse of my 
+                capabilities and the diverse range of solutions 
                 I can offer.
               </p>
             </div>
@@ -94,8 +123,8 @@
                     users with current weather conditions and a 5-day 
                     forecast for cities around the world. 
                   </p>
-                  <a href="https://github.com/Giftyaning/Climate-Cast?tab=readme-ov-file" class="btn btn-primary">View Code</a>
-                  <a href="https://giftyaning.github.io/Climate-Cast/" class="btn btn-primary">Live Site</a>
+                  <a href="https://github.com/Giftyaning/Climate-Cast?tab=readme-ov-file" class="btn btn-primary" target="_blank">View Code</a>
+                  <a href="https://giftyaning.github.io/Climate-Cast/" class="btn btn-primary" target="_blank">Live Site</a>
                 </div>
               </div>
 
@@ -112,8 +141,8 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">View Code</a>
-                  <a href="#" class="btn btn-primary">View</a>
+                  <a href="#" class="btn btn-primary" target="_blank">View Code</a>
+                  <a href="#" class="btn btn-primary" target="_blank">View</a>
                 </div>
               </div>
 
@@ -130,85 +159,59 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">View Code</a>
-                  <a href="#" class="btn btn-primary">View</a>
+                  <a href="#" class="btn btn-primary" target="_blank">View Code</a>
+                  <a href="#" class="btn btn-primary" target="_blank">View</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Skills Section -->
-      <section class="skills" id="skills">
-        <div class="top">
-          <h1>Skills</h1>
-          <p>Welcome to my skills section, where 
-            I highlight the diverse set of skills I've 
-            developed throughout my journey.</p>
-        </div>
-
-        <div class="skill-items">
-            <ul>
-                <li class="skill" id="html">
-                    <i class='bx bxl-html5'></i> 
-                </li>
-                <li class="skill" id="css">
-                    <i class='bx bxl-css3'></i> 
-                </li>
-                <li class="skill" id="javascript">
-                    <i class='bx bxl-javascript'></i> 
-                </li>
-                <li class="skill" id="react">
-                    <i class='bx bxl-react'></i> 
-                </li>
-            </ul>
-        </div>
-      </section>
-
+      
+      <!-- Contact -->
       <section class="contact" id="contact">
-        <div class="container mt-5">
-          <div class="row">
-            <div class="col-md-6 offset-md-3">
-              <h2 class="text-center mb-4">Contact Me</h2>
-              <form>
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    rows="5"
-                    placeholder="Enter your message"
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">
-                  Submit
-                </button>
-              </form>
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-6 offset-md-3">
+                <h2 class="text-start mb-4">Contact Me</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="5"
+                      placeholder="Enter your message"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- Footer -->
