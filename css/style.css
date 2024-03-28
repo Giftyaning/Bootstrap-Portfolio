@@ -14,6 +14,10 @@ section{
    margin-bottom: 2em;
 }
 
+.connect h2{
+    margin-top: 3em;
+}
+
 .connect button{
     margin-top: 2em;
     height: 2rem;
