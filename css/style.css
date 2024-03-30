@@ -29,13 +29,14 @@ section{
     width: 2.5rem;
     padding: 1.5em;
     border-radius: 50%;
+    border: 1px solid black;
     margin-right: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .connect button i {
-    background-color: #38b1d7;
+    font-size: 1.7rem;
 }
 
 
