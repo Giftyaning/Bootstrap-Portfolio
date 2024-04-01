@@ -7,9 +7,10 @@
 section{
     width: 100%;
     padding: 3em 5em;
+    min-height: 100vh;
 }
 
-/* Hero Scetion */
+/* Hero Section */
 .hero h1{
    margin-bottom: .7em;
 }
