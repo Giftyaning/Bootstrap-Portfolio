@@ -13,10 +13,16 @@ section{
 /* Hero Section */
 .hero h1{
    margin-bottom: .7em;
+   font-size: clamp(3rem 3vw 5rem);
 }
 
 .connect h2{
     margin-top: 2em;
+}
+
+.main .top{
+    margin-top: 10em;
+    margin-bottom: 10em;
 }
 
 /* Connect */
