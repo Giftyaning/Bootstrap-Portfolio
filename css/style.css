@@ -87,13 +87,12 @@ section{
     gap: 2rem;
 }
 .profile{
-    background-color: #2965f1;
+    line-height: 3rem;
 }
 
 .skill-items {
     width: 100%;
     max-width: 50rem;
-    background-color: #0a1e63;
 }
     
 .skill-items ul {
@@ -183,5 +182,9 @@ section{
         max-height: 25rem;
         overflow-x: scroll;
         gap: 2em;
+    }
+
+    .main-content {
+        flex-direction: column;
     }
 }
