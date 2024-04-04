@@ -82,10 +82,18 @@ section{
 }
 
 /* Skills */
+.main-content{
+    display: flex;
+    gap: 2rem;
+}
+.profile{
+    background-color: #2965f1;
+}
+
 .skill-items {
     width: 100%;
     max-width: 50rem;
-    margin-top: 5em;
+    background-color: #0a1e63;
 }
     
 .skill-items ul {
