@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to get the skill name based on the ID
   function getSkillName(skillId) {
-    // Add your custom logic here to map skill IDs to their names
     switch (skillId) {
       case "html":
         return "HTML";
