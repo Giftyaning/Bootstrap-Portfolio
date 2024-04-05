@@ -24,23 +24,27 @@ function type() {
 
 typingInterval = setInterval(type, 100);
 
-
 document.addEventListener("DOMContentLoaded", function () {
   var skills = document.querySelectorAll(".skill");
 
   skills.forEach(function (skill) {
+    var skillIcon = skill.querySelector("i");
+    var skillText = document.createElement("span");
+    skillText.classList.add("skill-text");
+    skill.appendChild(skillText);
+
     skill.addEventListener("mouseenter", function () {
       var skillId = skill.getAttribute("id");
       var skillName = getSkillName(skillId);
       if (skillName) {
-        skill.innerHTML = "<span>" + skillName + "</span>";
+        skillText.textContent = skillName;
+        skillIcon.style.display = "none";
       }
     });
 
     skill.addEventListener("mouseleave", function () {
-      var skillId = skill.getAttribute("id");
-      var skillIconClass = "bx bxl-" + skillId;
-      skill.innerHTML = "<i class='" + skillIconClass + "'></i>";
+      skillText.textContent = "";
+      skillIcon.style.display = "block";
     });
   });
 
