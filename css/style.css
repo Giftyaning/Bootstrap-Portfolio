@@ -151,6 +151,20 @@ section{
     color: #fff;
 }
 
+.skill-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
+    z-index: 2;
+}
+
+.skill:hover .skill-name {
+    display: block;
+}
+
 /* Skill Rotate color */
 #css::before {
     background: linear-gradient(#0a1e63, #38b1d7);

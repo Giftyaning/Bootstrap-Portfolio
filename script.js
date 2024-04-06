@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
   skills.forEach(function (skill) {
     var skillIcon = skill.querySelector("i");
     var skillText = document.createElement("span");
-    skillText.classList.add("skill-text");
-    skill.appendChild(skillText);
+    skillText.classList.add("skill-name");
+    skill.appendChild(skillText); // Add the span element to the skill element
 
     skill.addEventListener("mouseenter", function () {
       var skillId = skill.getAttribute("id");
