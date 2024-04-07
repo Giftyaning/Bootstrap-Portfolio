@@ -26,6 +26,18 @@ section{
     margin-bottom: 10em;
 }
 
+.info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+.info button{
+    padding: .5em;
+    border-radius: 2rem;
+    width: 9rem;
+}
+
 /* Connect */
 .connect{
     display: flex;
