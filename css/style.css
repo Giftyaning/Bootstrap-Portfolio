@@ -11,6 +11,39 @@ section{
     min-height: 100vh;
 }
 
+/* Animations */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+ /* Slide-in-right animation */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-in-right {
+    opacity: 0;
+}
+
+.slide-in-right.active {
+    animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+
 /* Hero Section */
 .hero h1{
    margin-bottom: .6em;
