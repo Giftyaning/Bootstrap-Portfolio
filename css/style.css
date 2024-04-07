@@ -28,7 +28,7 @@ section{
 
 .info{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     margin-top: 5em;
 }
 
@@ -191,6 +191,21 @@ section{
     background: linear-gradient(#06cee4, #a2a0a0);
 }
 
+/* Contact Section */
+.contact{
+    padding: 3em 5em;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: .15rem solid black;
+    padding: 1em;
+    border-radius: 5em;
+    max-width: 70%;
+    margin-bottom: 15em;
+}
+
 
 @keyframes rotate {
     from {
@@ -213,5 +228,10 @@ section{
 
     .main-content {
         flex-direction: column;
+    }
+    
+    .contact-info {
+        max-width: 100%;
+        padding: .5em;
     }
 }
