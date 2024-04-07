@@ -8,13 +8,15 @@ function type() {
   if (index <= name.length) {
     document.getElementById("typing").innerText = name.slice(0, index);
   } else if (index <= name.length + 2) {
-    document.getElementById("typing").innerText = "";
+    document.getElementById("typing").innerText = name;
   } else {
-    document.getElementById("typing").innerText = role.slice(
+    const roleIndex = index - (name.length + 3); // Adjust for name length and spaces
+    document.getElementById("typing").innerText = `${name}\n${role.slice(
       0,
-      index - name.length - 3
-    );
+      roleIndex
+    )}`;
   }
+
   index++;
 
   if (index > name.length + role.length + 3) {
@@ -23,6 +25,8 @@ function type() {
 }
 
 typingInterval = setInterval(type, 100);
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var skills = document.querySelectorAll(".skill");
